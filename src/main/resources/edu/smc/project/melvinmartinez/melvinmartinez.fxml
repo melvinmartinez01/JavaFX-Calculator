@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<VBox spacing="20" alignment="CENTER"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="edu.smc.project.melvinmartinez.MelvinMartinezController">
+
+    <HBox alignment="CENTER">
+        <TextField fx:id="firstNumber" promptText="Enter first operand" />
+    </HBox>
+
+    <HBox alignment="CENTER">
+        <TextField fx:id="secondNumber" promptText="Enter second operand" />
+    </HBox>
+
+    <HBox alignment="CENTER" spacing="10">
+        <Button text="+" onAction="#handleAdd"/>
+        <Button text="-" onAction="#handleSubtract"/>
+        <Button text="*" onAction="#handleMultiply"/>
+        <Button text="/" onAction="#handleDivide"/>
+    </HBox>
+
+    <HBox alignment="CENTER">
+        <Label fx:id="resultLabel"/>
+    </HBox>
+
+</VBox>
